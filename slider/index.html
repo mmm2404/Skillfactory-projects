@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.css">
+    <script src="./script.js"></script>
+    <title>Slider</title>
+</head>
+<body>
+    <section class="project">
+        <div class="project-wrapper">
+            <div class="project-info__intro">
+                <div class="project__title">
+                <h2 class="project-info__title"> Completed <br> projects </h2>
+                <img  class="project__title_line" src="./images/title-line.svg" alt="underline">
+                </div>
+                <div class="project-info__text">
+                <p >Only a small part of the work performed by our company is presented <br>
+                 on the site. For 14 years on in the construction <br>
+                 market we have made happy more than 1000 families
+                 </p>
+                </div>
+            </div>
+            <div class="project-info_details">
+                <div class="project-info_details-grid">
+                    <div><h2 class="subtitle">City:</h2><p class="detail-description">Rostov-on-Don<br>LCD admiral</p></div> 
+                    <div><h2 class="subtitle">Apartment area:</h2><p class="detail-description">81 m2</p></div> 
+                    <div><h2 class="subtitle">Repair time:</h2><p class="detail-description">3.5 months</p></div> 
+                    <div><h2 class="subtitle">Repair Cost:</h2><p class="detail-description">Upon request</p></div> 
+                </div>
+                <div class="slider_buttons">
+                    <div class="slider_arrow left" onclick="minusSlide()"><img src="./images/arrow-left.svg"  alt="Click previous picture"></div>
+                    <div class="slider_dots">
+                        <div class="slider_dots__item" onclick="currentSlide(1)"></div>
+                        <div class="slider_dots__item" onclick="currentSlide(2)"></div>
+                        <div class="slider_dots__item" onclick="currentSlide(3)"></div>
+                    </div>
+                    <div class="slider_arrow right" onclick="plusSlide()"><img src="./images/arrow-right.svg" alt="Click next picture"></div>
+                </div>
+            </div>
+             <div class="project-slider">
+                 <ul class="city-list">
+                    <li class="city-list__item"><button type="button" class="city-link" onclick="currentSlide(1)">Rostov-on-Don, Admiral</button></li>
+                    <li class="city-list__item"><button type="button" class="city-link" onclick="currentSlide(2)">Sochi Thieves</button></li>
+                    <li class="city-list__item"><button type="button" class="city-link" onclick="currentSlide(3)">Rostov-on-Don Patriotic</button></li>
+                </ul>
+                 <div class="slider_images">
+                    <img src="./images/picture1.png"  id="first" class="image"  alt="first slide">
+                    <img src="./images/picture2.png"  id="second" class="image" alt="second slider">
+                    <img src="./images/picture3.png" id="third" class="image" alt="third slider">
+                </div>
+            </div>
+           
+        </div>      
+</body>
+</html>
+
